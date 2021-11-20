@@ -1,0 +1,10 @@
+.header__banner {
+    
+}
+.text__img {
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    text-align: center;
+    color: aliceblue;
+}
