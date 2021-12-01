@@ -127,3 +127,74 @@ input {
 .motobuy1 {
     margin-left: 300px;
 }
+.text__r15 {
+    
+    position: relative;
+    
+}
+.r15 {
+    z-index: 1;
+    margin-top: -40px;
+    margin-left: -130px;
+    position: absolute;
+    text-transform: uppercase;
+    
+}
+a {
+    text-decoration: none;
+}
+.footer {
+    background: url('./phuot-xe-may.jpg');
+    height: 700px;
+    background-size:cover;
+    
+}
+.inset__ft {
+  position: absolute;
+  margin-left: 425px;
+  top: 100px;
+}
+.inset__ft > p {
+    padding: 30px 0;
+}
+.inset__ft > a {
+    text-decoration: none;
+    text-transform:uppercase;
+    padding: 10px;
+    
+    
+}
+.section__2 {
+    height: 100px;
+}
+
+
+#tim{
+    position: fixed;
+    width: 100px;
+    height: 90px;
+    background: green;
+    z-index: 9999;
+    top: 300px;
+    left: 100px;
+}
+#tim::before, #tim::after{
+    
+    top: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 80px;
+    background: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+#tim::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
