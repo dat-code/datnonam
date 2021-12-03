@@ -69,39 +69,7 @@ input {
     opacity: 0.8;
 }
 /* main */
-.img__tour--1 {
-    background-image: url('./kinh-nghiem-du-lich-Ha-Noi-1.jpg');
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    background-repeat: no-repeat;
-    color: #ccc;
-}
-.img__tour--2 {
-    background-image: url('./1575277501.webp');
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    background-repeat: no-repeat;
-    color: #ccc;
-}
-.img__tour--3 {
-    
-    background-image: url('./ninh-binh-thang-8-17082019-1.jpg');
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    background-repeat: no-repeat;
-    color: #ccc;
-}
-.img__tour--4 {
-    background-image: url('./Kinh-nghiem-du-lich-Sai-Gon-4-ngay-3-dem-1_1625035625.jpg');
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    background-repeat: no-repeat;
-    color: #ccc;
-}
+
 .motobuy {
     width: 400px;
     height: 550px;
@@ -125,7 +93,7 @@ input {
     
 }
 .motobuy1 {
-    margin-left: 300px;
+    margin-left: 100px;
 }
 .text__r15 {
     
@@ -151,7 +119,7 @@ a {
 }
 .inset__ft {
   position: absolute;
-  margin-left: 425px;
+  margin-left: 320px;
   top: 100px;
 }
 .inset__ft > p {
@@ -197,4 +165,92 @@ a {
     left: 0;
     transform: rotate(45deg);
     transform-origin: 100% 100%;
+}
+.h2r {
+    margin-left: 260px;
+}
+
+/* mobile */
+@media only screen and (max-width:46.1875em) {
+    .header__nav {
+        width: 100%;
+    }
+    .slider__hd {
+        width: 100%;
+        background-size: cover;
+    }
+    .paraghrap__sd {
+      left: 10px;
+     
+    }
+    .form {
+        position: absolute;
+        right: 1px;
+        background-color: #000;
+
+
+    }
+    main {
+        margin-top: 550px;
+    }
+    .pkl {
+        display: flex;
+        flex-direction: column;        
+    }
+    .img__tour--1 {
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    .img__tour--2 {
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    .img__tour--3 {
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+    .img__tour--4 {
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+ 
+  .checkmoto {
+      display: flex;
+      flex-direction: column;
+  }
+  .list__moto {
+      background-color: aqua;
+  }
+  .motobuy1 {
+      margin-left: 0px;
+      margin-bottom: 10px;
+     
+      
+  }
+  .motobuy {
+      height: 570px;
+  }
+  .motobuy2 {
+      margin-left: 0px;
+      margin-bottom: 10px;
+  }
+ 
+
+    .inset__ft {
+        margin-left: 0px;
+    }
+    .h2r { 
+       margin-left: 100px;
+    }
+    .madam {
+        /* display: flex;
+        flex-direction: column; */
+    }
+   .phone {
+      margin-left: 105px;
+   }
+
+}
+.phone {
+    border: #000 solid 1px ;
 }

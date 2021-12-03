@@ -102,3 +102,50 @@ li {
 .section {
     margin-top: 200px;
 }
+
+/* mobile */
+@media only screen and (max-width:46.1875em) {
+ 
+  .nav__btn a {
+          padding: 5px;
+          /* margin: 10px; */
+  } 
+  .navbar {
+      margin-left: 40px;
+
+  }
+  .img__header--2 {
+      margin-top:30px;
+      margin-left: 30px;
+  }
+  .danhmuc {
+      width: 100%;
+  }
+  .danhmuc__btn--1 {
+          margin-left: 10px;
+  }
+  .my__tour {
+      margin-top: 20px;
+  }
+  .box__1 {
+      margin-top: 10px;
+      margin-bottom: 150px;
+      margin-left: 5px;
+  }
+  .slide__main {
+      margin-top: 10px;
+  }
+  .danhmuc__btn {
+      padding: 0 10px;
+  }
+  .box__2 {
+      margin-top: 10px;
+      margin-bottom: 200px;
+  }
+  .img__ft {
+      width: 50px;
+  }
+  iframe {
+      width: 300px;
+  }
+}
