@@ -1,0 +1,44 @@
+.header__nav {
+    background-color: rgb(167, 166, 166);
+    height: 50px;
+}
+a {
+    text-transform: uppercase;
+}
+.header__nen {
+    background: url('../font/mu-cang-chai-8.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.text__hd {
+    padding-top: 150px;
+    color: #fff;
+}
+.box__1 {
+    width: 100px;
+}
+
+.text__main {
+font-size: 12px;
+width: 300px;
+}
+.paragrap {
+font-size: 12px;
+width: 300px;
+}
+table {
+    display: flex;
+    justify-content: center;
+}
+td {
+    border: 1px solid black;
+    padding: 0 10px;
+    color: rgb(19, 19, 10);
+}
+
+@media only screen and (min-width:46.25em) {
+    .box__2 {
+        
+    }
+}

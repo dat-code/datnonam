@@ -1,0 +1,119 @@
+.header__nav {
+    height: 60px;
+    background-color: rgb(187, 196, 193);
+}
+.header__bg {
+    background: url('../font/anh-nen-dep-ve-ha-noi_054022808.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+}
+.text__1 {
+    color: #fff;
+   padding-top: 100px;
+}
+.form__1 {
+    display: flex;
+    justify-content: center;
+   padding: 10px 20px;
+    
+}
+a {
+    text-transform: uppercase;
+    color: black;
+}
+main {
+    margin-top: 20px;
+}
+.main__1 {
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+}
+.main__1--nd {
+    background-color: rgb(201, 193, 193);
+    border-bottom: 0.5px black solid;
+    padding-left: 10px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer{
+position: relative;
+height: 200px;
+}
+
+
+.footer__prap--2 {
+    padding-bottom: 50px;
+    
+    border-bottom: 1px black solid;
+    
+}
+@media only screen and (max-width:46.1875em) {
+    .header__nav {
+        width: 100%;
+    }
+    .form__1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .search {
+        width: 319px;
+    }
+    .header__bg {
+        z-index: -1;
+    }
+    .main__1 {
+        margin-left: 0px;
+    }
+    .footer--btn {
+        position: absolute;
+         left: 0;
+       margin-top: 190px;
+       margin-left: 60px;
+    }
+    footer {
+        height: 300px;
+        position: relative;
+    }
+
+}
+
+@media only screen and (min-width:46.25em) {
+    .header__nav {
+        width: 100%;
+    }
+    .form__1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .search {
+        width: 319px;
+    }
+    .header__bg {
+        z-index: -1;
+    }
+    .main__1 {
+        margin-left: 0px;
+    }
+    .footer--btn {
+        position: absolute;
+        left: 0;
+        margin-left: 490px;
+        margin-top: 20px;
+       
+    }
+    footer {
+        height: 300px;
+        position: relative;
+    }
+    a {
+        color: #fff;
+    }
+
+}

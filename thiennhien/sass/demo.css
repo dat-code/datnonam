@@ -169,6 +169,23 @@ a {
 .h2r {
     margin-left: 260px;
 }
+.d2 {
+    float: left;
+    margin: 0 10px;
+}
+.list__moto {
+    clear: both;
+}
+.d1 {
+    width: 100%;
+    
+}
+@media screen and (max-width:700px){
+    .d1 {
+        width: 50%;
+    }
+    
+}
 
 /* mobile */
 @media only screen and (max-width:46.1875em) {
@@ -181,6 +198,7 @@ a {
     }
     .paraghrap__sd {
       left: 10px;
+      font-size: 14px;
      
     }
     .form {
@@ -193,49 +211,21 @@ a {
     main {
         margin-top: 550px;
     }
-    .pkl {
+    .list__moto {
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        z-index: -1;
     }
-    .img__tour--1 {
-        margin-left: 50px;
-        margin-bottom: 20px;
-    }
-    .img__tour--2 {
-        margin-left: 50px;
-        margin-bottom: 20px;
-    }
-    .img__tour--3 {
-        margin-left: 50px;
-        margin-bottom: 20px;
-    }
-    .img__tour--4 {
-        margin-left: 50px;
-        margin-bottom: 20px;
-    }
- 
-  .checkmoto {
-      display: flex;
-      flex-direction: column;
-  }
-  .list__moto {
-      background-color: aqua;
-  }
-  .motobuy1 {
-      margin-left: 0px;
-      margin-bottom: 10px;
-     
-      
-  }
-  .motobuy {
-      height: 570px;
-  }
-  .motobuy2 {
-      margin-left: 0px;
-      margin-bottom: 10px;
-  }
- 
-
+   .motobuy1 {
+       margin-left: 0px;
+       margin-bottom: 10px;
+   }
+   .motobuy2 {
+    margin-left: 0px;
+    margin-bottom: 10px;
+   }
     .inset__ft {
         margin-left: 0px;
     }
@@ -253,4 +243,45 @@ a {
 }
 .phone {
     border: #000 solid 1px ;
+}
+
+/* ibad */
+@media only screen and (min-width:600px){
+    .header__nav {
+        width: 100%;
+    }
+    .slider__hd {
+        width: 100%;
+        background-size: cover;
+        height: 1000px;
+    }
+    .paraghrap__sd {
+      left: 10px;
+      font-size: 25px;
+      top: 0;
+      
+     
+    }
+    .form {
+        position: absolute;
+        right: 20px;
+        background-color: #000;
+    }
+    .motobuy1 {
+        margin-left: 200px;
+        margin-bottom: 20px;
+    }
+    .motobuy2 {
+        margin-left: 199px;
+    }
+    .motobuy3 {
+        margin-left: 200px;
+        margin-top: 20px;
+    }
+    
+    
+   .h2r {
+       margin-left: 0px;
+   }
+    
 }
