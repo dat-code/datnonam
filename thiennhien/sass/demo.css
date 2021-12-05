@@ -172,14 +172,18 @@ a {
 .d2 {
     float: left;
     margin: 0 10px;
+    margin-bottom: 10px;
 }
 .list__moto {
     clear: both;
+   
 }
 .d1 {
     width: 100%;
     
+    
 }
+
 @media screen and (max-width:700px){
     .d1 {
         width: 50%;
