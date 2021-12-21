@@ -1,2 +1,1 @@
-var Intro = "Xin chao";
-document.getElementById("Intro").innerHTML = Intro;
+document.write("xin chào các bạn")
