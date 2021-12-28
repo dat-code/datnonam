@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>nhập tên
+        <input type="text" placeholder="tên" id="name">
+    </h3>
+    <h3>nhập địa chỉ
+        <input type="text" placeholder="địa chỉ" id="adress">
+    </h3>
+    <h3>nhập ngày <input type="date" placeholder="ngày" id="time"></h3>
+    <button onclick="Write_Letter()">tạo</button>
+    <div id="result">chờ cái quần què</div>
+  
+
+    
+</body>
+</html>
+<script>
+    function Write_Letter () {
+        let name = document.getElementById("name").value;
+       
+        let adress = document.getElementById("adress").value;
+        let time = document.getElementById('time').value;
+        let result = name + " thương nhớ "  + " tao đang ỏ  " + adress + " " + time;
+        document.getElementById("result").innerHTML = result;
+
+        
+
+    }
+   
+
+</script>
