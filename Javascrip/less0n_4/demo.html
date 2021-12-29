@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border: 1px solid black; height: 190px; width: 190px; background-color: white;" >
+        <img src="./tank.png" width="19" height="19" style="position: relative; top: 0; left: 0;" id="tank" alt="">
+    </div>
+    <button onclick="run()">click</button>
+    <button onclick="go()">click</button>
+
+</body>
+</html>
+<script>
+    function run () {
+        let x = parseInt("19px");
+    let y = Number("19px");
+    document.getElementById('tank').style["top"] = 19 + "px";
+         
+    }
+    function go () {
+        let x = parseInt("38px");
+        let y = Number("38px");
+         document.getElementById('tank').style["left"] = 38 + "px";
+
+    }
+   
+
+
+</script>

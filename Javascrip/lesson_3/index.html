@@ -7,31 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>nhập tên
-        <input type="text" placeholder="tên" id="name">
-    </h3>
-    <h3>nhập địa chỉ
-        <input type="text" placeholder="địa chỉ" id="adress">
-    </h3>
-    <h3>nhập ngày <input type="date" placeholder="ngày" id="time"></h3>
-    <button onclick="Write_Letter()">tạo</button>
-    <div id="result">chờ cái quần què</div>
   
+  <p onclick="something()">click me</p>
+  <p id="demo">click</p>
 
     
 </body>
 </html>
 <script>
-    function Write_Letter () {
-        let name = document.getElementById("name").value;
-       
-        let adress = document.getElementById("adress").value;
-        let time = document.getElementById('time').value;
-        let result = name + " thương nhớ "  + " tao đang ỏ  " + adress + " " + time;
-        document.getElementById("result").innerHTML = result;
-
-        
-
+    function something(){
+        alert('xin chào');
+    }
+    var demo = document.getElementById("demo");
+    demo.addEventListener("click", clickFunction);
+    function clickFunction() {
+        alert("không chào luôn");
     }
    
 
