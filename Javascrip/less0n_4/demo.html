@@ -10,24 +10,36 @@
     <div style="border: 1px solid black; height: 190px; width: 190px; background-color: white;" >
         <img src="./tank.png" width="19" height="19" style="position: relative; top: 0; left: 0;" id="tank" alt="">
     </div>
-    <button onclick="run()">click</button>
-    <button onclick="go()">click</button>
+    <button onclick="run()">xuống</button>
+    <button onclick="go()">phải</button>
+    <button onclick="down()">lên</button>
+    <button onclick="right()">trái</button>
+
 
 </body>
 </html>
 <script>
-    function run () {
-        let x = parseInt("19px");
-    let y = Number("19px");
-    document.getElementById('tank').style["top"] = 19 + "px";
-         
-    }
-    function go () {
-        let x = parseInt("38px");
-        let y = Number("38px");
-         document.getElementById('tank').style["left"] = 38 + "px";
+    let vtop = 0;
+    let vleft = 0;
+   function run () {
+       vtop +=19;
+      document.getElementById("tank").style["top"] = vtop  + "px";
+   }
+   function go () {
+       vleft +=19;
+       document.getElementById("tank").style["left"] = vleft + "px";
 
-    }
+   }
+   function down () {
+       vtop -= 19;
+       document.getElementById("tank").style["top"] = vtop + "px";
+
+   }
+   function right () {
+       vleft -=19;
+       document.getElementById("tank").style["left"] = vleft + "px";
+       
+   }
    
 
 
