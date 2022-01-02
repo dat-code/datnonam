@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div id="demo"></div>
-    <button type="button" onclick="showMessage ();">click me</button>
+<body style="border: 1px solid black; width: 100%;background-color: violet;">
+    <div id="demo" style="font-size: 30px; font-style: italic;">Mày muốn có người yêu không ?</div>
+    <br>
+    <button type="button" onclick="showMessage ();" style="padding: 10px; font-size: 20px;">có</button>
 </body>
 </html>
 <script>
     function showMessage() {
-        console.log("xin chào bạn sương khùng");
+        document.getElementById("demo").innerHTML = "không làm mà đòi có người yêu, lo làm đi !";
         
     }
 </script>
