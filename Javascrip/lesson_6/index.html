@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="toan" placeholder="điểm t">
+    <input type="number" id="van" placeholder="điểm v">
+    <select name="" id="khuvuc">
+        <option value="1">KV1</option>
+        <option value="2">KV2</option>
+        <option value="2NT">2NT</option>
+        <option value="3">KV3</option>
+
+        
+    </select>
+    <button id="tong" onclick="tong()">Tổng điểm</button>
+    <div id="result">xem điểm của mi nè</div>
+
+</body>
+</html>
+<script>
+function tong() {
+    let toan =  +document.getElementById("toan").value;
+    let van = +document.getElementById("van").value;
+    let khuvuc = document.getElementById("khuvuc").value;
+    let sum = toan + van ;
+    switch (khuvuc) {
+        case "1":
+             sum += 0.75;
+             break;
+        case "2":
+            sum += 0.25;
+            break;
+        case "2NT":
+            sum += 0.5;
+            break;
+        case "3":
+            sum += 0;
+            break;
+                
+    }  
+    document.getElementById("result").innerHTML = "tổng điểm của bạn là " + sum ;
+
+}
+</script>

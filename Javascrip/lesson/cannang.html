@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let cannang = +prompt("nhập vào cân nặng");
+        let chieucao = +prompt("nhập vào chiều cao");
+        let result = cannang / (Math.pow(chieucao, 2));
+        if (result > 40) {
+            alert("béo phì cấp độ 3");
+        } else if (result < 40 || result >= 35) {
+            alert("béo phì cấp độ 2");
+        } else if (result < 35 || result >= 30) {
+            alert("béo phì cấp độ 1");
+        } else if (result < 30 || result >= 25) {
+            alert("thừa cân");
+        } else if (result < 25 || result >= 18.5) {
+            alert("bình thường");
+        } else if (result < 18.5 || result >= 17) {
+              alert("gầy cấp độ 1");
+        } else if (result < 17 || result >= 16) {
+            alert("gầy cấp độ 2");
+        } else if (result <16) {
+            alert("yêu ít thôi");
+        }
+    </script>
+</body>
+</html>

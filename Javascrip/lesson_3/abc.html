@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Tính số ngày trong một tháng</h2>
+    <input type="number" id="num" min="1" max="12" style="width: 300px;">
+    <button onclick="day()">day</button>
+    <h1 id="result"></h1>
+</body>
+</html>
+<script>
+   function day() {
+        let number = document.getElementById("num").value;
+        let month1 = "1";
+        let month2 = "2";
+        let month3 = "3";
+        let month4 = "4";
+        let month5 = "5";
+        let month6 = "6";
+        let month7 = "7";
+        let month8 = "8";
+        let month9 = "9";
+        let month10 = "10";
+        let month11 = "11";
+        let month12 = "12";
+       /* if (number == month1 || number== month3 || number == month5 || number== month7 || number ==month8 || number == month10 || number == month12) {
+            document.getElementById("result").innerHTML ="tháng " + number + " có 31 ngày";
+            
+        } else if (number == month4 || number == month6 || number == month9 || number == month11) {
+            document.getElementById("result").innerHTML = "tháng" + number + " có 30 ngày";
+        } else if (number == month2) {
+            document.getElementById("result").innerHTML = "tháng " + number + " có 28 hoặc 29 ngày";
+        } else {
+            document.getElementById("result").innerHTML = "nhập lại đi";
+        }*/
+        switch (number) {
+            case "1":
+            case "3":
+            case "5":
+            case "7":
+            case "8":
+            case "10":
+            case "12":
+                document.getElementById("result").innerHTML = "tháng " + number + " có 31 ngày ";
+                break;
+            case "4":    
+            case "6":
+            case "9":  
+            case "11":  
+            document.getElementById("result").innerHTML = "tháng " + number + " có 30 ngày ";
+             break;
+            case "2": 
+            document.getElementById("result").innerHTML = "tháng " + number + " có 28 hoặc 29 ngày";
+            break;
+            default: 
+            document.getElementById("result").innerHTML = "quay về hành tinh của mi đi";
+
+        
+        }
+
+    }
+    
+  
+</script>

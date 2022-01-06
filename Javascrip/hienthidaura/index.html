@@ -6,15 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="border: 1px solid black; width: 100%;background-color: violet;">
-    <div id="demo" style="font-size: 30px; font-style: italic;">Mày muốn có người yêu không ?</div>
-    <br>
-    <button type="button" onclick="showMessage ();" style="padding: 10px; font-size: 20px;">có</button>
+<body >
+    
 </body>
 </html>
 <script>
-    function showMessage() {
-        document.getElementById("demo").innerHTML = "không làm mà đòi có người yêu, lo làm đi !";
-        
-    }
+    /*let a = +prompt("enter in a number 1");
+    let b = +prompt("enter in a number 2");
+     result = (a + b < 4) ? 'below' : 'over';
+     alert(result); */
+     let login = prompt("enter in the text");
+     let message = (login == "employee") ?
+              "hello":
+              (login == "director") ?
+              "greeting" :
+              (login == "") ?
+              "again": 
+              "" ;
+              alert(message);
+                                        
+     
 </script>

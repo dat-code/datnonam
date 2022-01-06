@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Giá hoa quả & trái cây </h1>
+   <input type="text" id="fruid" placeholder="ăn trái gì đây">
+   <button onclick="buy()">báo giá</button>
+
+</body>
+</html>
+<script>
+   function buy() {
+       let fruid = document.getElementById("fruid").value;
+       switch (fruid) {
+           case "xoài":  
+           document.write("200k/kg");
+           break;
+           case "dưa hấu": 
+           document.write("20000/kg");
+           break;
+           case "táo": 
+           document.write("30000/kg");
+           break;
+           case "cam": 
+           document.write("40000/kg");
+           break;
+           default:  document.write("không có tiền thì lượn! lựa hoài");
+       }
+   }
+</script>
