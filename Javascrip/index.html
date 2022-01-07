@@ -5,29 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
 </head>
 <body>
-   
-  <script>
-  let sotienvay, laisuat, nam;
-  sotienvay = prompt('hãy nhập vào số tiền muốn vay');
-  laisuat = prompt('hãy nhập vào lãi suất');
-  nam = prompt('thời hạn trả nợ');
-  // đổi kiểu dữ liệu về dạng số;
-  let stv = parseInt(sotienvay);
-  let ls = parseInt(laisuat);
-  let n = parseInt(nam);
-  //tinhs toán
-  let ls1 = ls/100;
-  let tienlai = ls1 * stv;
-  let tptsaunnam = stv + n * tienlai;
-  // tiền phải trả sau n năm
-  document.write("tiền lãi = " + tienlai);
-  document.write("<br/>");
-  document.write("tiền phải trả sau n năm là = " + tptsaunnam);
-  </script>
- 
+    <div style="border: 1px solid black; width: 190px; height: 190px; background-color: green;">
+        <img id="tank" src="../pngtree-green-tank-combat-aircraft-illustration-png-image_4509465.jpg" height="19" width="19" style="position: relative; top: 0; left: 0;" alt="">
+    </div>
+    <button onclick="down()">xuống</button><button onclick="vtop ()">lên</button><button onclick="right()">phải</button><button onclick="left()">trái</button>
 </body>
 </html>
-
+<script>
+  let x = 0;
+  let y = 0;
+  function down() {
+      x += 19;
+      document.getElementById("tank").style["top"] = x + "px";
+  }
+  function vtop() {
+      x -= 19;
+      document.getElementById("tank").style["top"] = x + "px";
+  }
+  function right() {
+      y += 19;
+      document.getElementById("tank").style["left"] = y + "px";
+  }
+  function left() {
+      y -= 19;
+      document.getElementById("tank").style["left"] = y + "px";
+  }
+</script>
