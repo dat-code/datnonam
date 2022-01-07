@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+  <input type="text" id="num" placeholder="nhập vào số tiền muốn chuyển đổi">
+  <div>
+    <select  id="from">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+  </div>  
+  <div>
+    <select  id="to">
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+    </select>
+  </div>
+  <button onclick="Monney()">Change</button>
+<h2 id="result">kết quả</h2>
+</body>
+
+</html>
+<script>
+    function Monney() {
+        let number = document.getElementById("num").value;
+        let fromc = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        let result = "";
+
+       if (fromc == "USD" && to == "VND") {
+           result = "kết quả : " + (number * 23000) + "đ";
+           
+       }
+       else if (fromc == "VND" && to == "USD") { 
+           result = "kết quả : " + (number / 23000) + "$";
+       } 
+       else if (fromc == "VND") {
+           result = number + "đ"
+       } else {
+           result = number + "$"
+       }
+       document.getElementById("result").innerHTML = result;
+    
+    }
+</script>
