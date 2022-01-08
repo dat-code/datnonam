@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+  
+
+           
+    
+    
+</body>
+</html>
+<script>
+    let sout = "<table border='1' width='1100' cellspacing='15' cellpadding='8'>";
+   for (a =1; a<=9; a++) {
+       sout = sout + "<tr>";
+       for (b =1; b <=10; b++) {
+     let sum = a *b;
+
+     sout = sout + ( "<td>" + a + "x" + b + "=" + sum + "</td>" );
+     
+       }
+       sout = sout + "</tr>";
+   }
+   sout = sout + "</table>";
+   document.write(sout);
+    
+   
+
+</script>
