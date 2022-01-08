@@ -5,29 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   
 </head>
 <body>
-   
-  <script>
-  let sotienvay, laisuat, nam;
-  sotienvay = prompt('hãy nhập vào số tiền muốn vay');
-  laisuat = prompt('hãy nhập vào lãi suất');
-  nam = prompt('thời hạn trả nợ');
-  // đổi kiểu dữ liệu về dạng số;
-  let stv = parseInt(sotienvay);
-  let ls = parseInt(laisuat);
-  let n = parseInt(nam);
-  //tinhs toán
-  let ls1 = ls/100;
-  let tienlai = ls1 * stv;
-  let tptsaunnam = stv + n * tienlai;
-  // tiền phải trả sau n năm
-  document.write("tiền lãi = " + tienlai);
-  document.write("<br/>");
-  document.write("tiền phải trả sau n năm là = " + tptsaunnam);
-  </script>
- 
+
 </body>
 </html>
+<script>
+    /* let browser = prompt("nhập vào đây lời trăn trối");
+     let result = "";
+     switch (browser) {
 
+        case "Edge": 
+        result = "đúng rồi đấy";
+        alert(result);
+        break;
+        case "chrome": 
+        case "Fire for": 
+        case "safari": 
+        case "opera": 
+        alert("thôi được rồi đi thôi");
+        break;
+        default: alert("get out here");
+     } */
+    /* let a = prompt("a?", "");
+     switch (a) {
+         case "0": 
+         alert("0");
+         break;
+         case "1": 
+         alert("1");
+         break;
+         case "2": 
+         case "3": 
+         alert("2, 3");
+         break;
+         default: alert("xin lỗi quý khách");
+     }*/
+     let number = prompt("nhập vào đây");
+     if (number > 0) {
+          alert("1");
+     } else if (number < 0 ) {
+         alert("-1");
+     } else {
+         alert("mày biết bố mày là ai không");
+     }
+     
+</script>
