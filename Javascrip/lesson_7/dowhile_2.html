@@ -8,15 +8,14 @@
 </head>
 <body>
     <script>
-        debugger
-        let num = prompt("nhập vào một số bất kỳ");
-        let total = 0;
-        let i;
-        for (i=1 ; i<= num; i+=3) {
-          total +=i;
-          
-        } alert(total);
-
+        let password = "đồng tháp - tây ninh";
+        let input;
+        do {
+          input = prompt("nhập mật khẩu");
+        } while(input !== password);
+        alert("bạn có thể đi");
+       
+        
     </script>
 </body>
 </html>

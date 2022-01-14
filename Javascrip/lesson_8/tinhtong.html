@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let number = 30;
+       let stn = 0;
+       let tong = 0;
+       for (let i = 1; i < 1000; i++) {
+            if (stn < number) {
+                if (i % 7 == 0) {
+                  stn+=1;
+                  tong+=i;
+                } else {
+                    document.write(i + "</br>");
+                }
+            } else {
+                break;
+            }
+       } document.write(tong + " day la tong 30 so chia het cho 7");
+
+    </script>
+</body>
+</html>
