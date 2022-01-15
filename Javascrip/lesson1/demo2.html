@@ -9,15 +9,17 @@
 <body>
     <h1>kiểm tra a có phải là bội số của b hay không</h1>
     <script>
-        let a = prompt('nhập vào đây một số là a');
-        let b = prompt('nhập vào đây một số là b');
-        if (a % b == 0) {
-            alert('a là bội số của b');
-           
+        let a = +prompt('nhập vào đây một số là a');
+        let b = +prompt('nhập vào đây một số là b');
+        let result = 0;
+
+        for ( let i = a;i<b;i++) {
+          result +=i;
+          
         }
-        else {
-            alert('a không là bội số của b');
-        };
+        document.write(result + "</br>");
+        
+        
 
         
     </script>
