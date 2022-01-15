@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="playgame()">play</button>
+</body>
+</html>
+<script>
+    function playgame() {
+    let search = +prompt("nhập vào một số bất kỳ"); //10
+    let result = search / 2;
+    let check = +prompt("mời bạn đoán");
+    while ( check > result || check < result ) {
+         check = +prompt("vui lòng nhập lại");
+     
+    }
+    document.write("<h1>" + "đúng là con trai của ta" + "</h1>");
+    }
+</script>
