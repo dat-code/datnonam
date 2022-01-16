@@ -8,8 +8,14 @@
 </head>
 <body>
     <script>
-        let inputname = prompt("nhập vào tên của bạn");
-        document.write("xin chào bạn " + inputname);
+       let a = +prompt("nhập vào số thứ nhất");
+       let b = +prompt("nhập vào số thứ hai");
+       let over = 0;
+       for (i =a; i < b; i++) {
+                over+=i;
+       }
+       document.write(over);
+
     </script>
 </body>
 </html>
