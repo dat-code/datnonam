@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input = +prompt("nhập vào số bạn muốn"); //0
+        let write = [1,4,5,-3,0,10,11,15];
+        //let over = write[0];
+        for (let i = 0; i < write.length; i++) {
+              if (input == write[i]) {
+                  console.log("số bạn cần tìm nằm tại vị trí " + i + " trong mảng");
+              } else {
+                  console.log("xin lỗi bạn đi lạc rồi");
+              }
+        }
+    </script>
+</body>
+</html>
