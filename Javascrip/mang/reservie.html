@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = [1,4,5,6,7,8,9,0];
+        let first = 0;
+        let last = x.length - 1;
+        while (first< last) { // 0<7;   
+            let y = x[first]; // 1; 4; 5 ; 6
+            x[first] = x[last]; // 0  ; 9 ; 8; 7 
+            x[last] = y; // 1 ; 4; 5; 6
+            first++; //1 4
+            last--; // 6 3
+        } console.log(x);
+    </script>
+</body>
+</html>
