@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <br> <br>
+    <button onclick="excercise5()">Bai tap 5</button>
+
+    
+</body>
+</html>
+<script>
+    
+//     function tinhGiathua(num) {
+// let result;
+// if (num <=1) {
+//    result = 1;
+//    return result;
+// } else result = num * tinhGiathua(num -1);
+// return result;    
+// }
+
+// function excercise5() {
+// num = +prompt("Nhap so muon tinh giai thua");
+// document.write(tinhGiathua(num));
+// }
+ function number(n) {
+      let result = 0;
+      if (n <= 1) {
+          result = 1;
+          return result;
+      } else {
+             result = n * number(n-1);
+             return result;
+      }
+
+ }
+ let a = Number(prompt("nhập vào một số"));
+ console.log(number(a));
+</script>
